@@ -8,7 +8,7 @@ const PORT = process.env.PORT
 
 
 
-app.use(cors({origin : "https://dp-testing2.vercel.app"}))
+app.use(cors({origin : "https://dp-testing2-etik.vercel.app"}))
 app.use(express.json())
 mongoose.connect(mongoURL)
 .then(()=>{console.log("Mongoose connected successfully")})
