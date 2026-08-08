@@ -1,11 +1,14 @@
 require("dotenv").config();
 const express = require('express')
+const cors = require("cors")
 const app = express()
 const mongoose = require('mongoose')
 const mongoURL = process.env.MONGO_URL
 const PORT = process.env.PORT
 
 
+
+app.use(cors({origin : "https://dp-testing2.vercel.app/"}))
 
 mongoose.connect(mongoURL)
 .then(()=>{console.log("Mongoose connected successfully")})
