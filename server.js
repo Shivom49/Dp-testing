@@ -9,7 +9,7 @@ const PORT = process.env.PORT
 
 mongoose.connect(mongoURL)
 .then(()=>{console.log("Mongoose connected successfully")})
-.catch(()=>{console.log("Something went wrong")})
+.catch((err)=>{console.log("Something went wrong", err.message)})
 
 
 
