@@ -19,6 +19,10 @@ app.get("/", (req, res)=>{
 })
 
 
+app.get("/apiTest", (req, res) => {
+  res.json({ message: "Backend successfully connected" });
+});
+
 
 
 app.listen(PORT, ()=>{ console.log(`Server is running on ${PORT}`)})
